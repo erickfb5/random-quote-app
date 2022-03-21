@@ -1,13 +1,3 @@
-@media only screen and (max-width: 550px) {
-    .buttons {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    div.quote-box {
-        width: max-content;
-    }
-}
-
 .App {
     text-align: center;
     transition: background-color 1.9s;
@@ -26,6 +16,10 @@
         border-radius: 15px;
         max-width: 40vw;
         flex-direction: column;
+        display: flex;
+        height: 80vh;
+        justify-content: space-evenly;
+        font-size: large;
     }
     #quote {
         transition: color 1.9s;
@@ -52,6 +46,20 @@
             float: left;
             padding-top: 10px;
             font-size: 35px;
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        .quote-box {
+            max-width: 70vw;
+            height: 80vh;
+            align-items: center;
+            justify-content: space-around;
+            font-size: larger;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column-reverse;
+            align-content: flex-end;
         }
     }
 }
